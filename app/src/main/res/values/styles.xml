@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style.Chip.Choice" parent="Base.Widget.MaterialComponents.Chip">
+    <item name="android:checkable">true</item>
+    <item name="chipIconVisible">true</item>
+    <item name="checkedIconVisible">false</item>
+    <item name="closeIconVisible">false</item>
+    <item name="android:textColor">@color/p2_dark</item>
+    <item name="chipBackgroundColor">@color/bg_chip</item>
+    <item name="chipStrokeColor">@color/p1_pink2</item>
+    <item name="rippleColor">@color/grey</item>
+    <item name="selectableItemBackground">@color/lightgrey</item>
+    </style>
+
+
+    <style name="Widget.MaterialComponents.MaterialCalendar" parent="android:Widget">
+        <item name="android:windowFullscreen">false</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceMediumComponent</item>
+        <item name="dayStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day</item>
+        <item name="dayInvalidStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day.Invalid</item>
+        <item name="daySelectedStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day.Selected</item>
+        <item name="dayTodayStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day.Today</item>
+        <item name="yearStyle">@style/Widget.MaterialComponents.MaterialCalendar.Year</item>
+        <item name="yearSelectedStyle">@style/Widget.MaterialComponents.MaterialCalendar.Year.Selected</item>
+        <item name="yearTodayStyle">@style/Widget.MaterialComponents.MaterialCalendar.Year.Today</item>
+        <item name="rangeFillColor">@color/mtrl_calendar_selected_range</item>
+        <item name="android:calendarTextColor">@color/white</item>
+        <item name="selectableItemBackground">@color/white</item>
+        <item name="android:numbersSelectorColor">@color/white</item>
+        <item name="android:numbersBackgroundColor">@color/white</item>
+    </style>
+
+
+</resources>

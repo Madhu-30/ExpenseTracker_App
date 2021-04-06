@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".AddExpenditure">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:title="Add Details"
+        app:titleTextColor="@color/p1_pink1"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:text="DONE"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/p1_pink2"
+            android:elevation="10dp"/>
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:background="@color/design_default_color_primary_dark"/>-->
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/p1_blue"
+        android:layout_marginTop="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="10dp">
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:hint="Enter amount"-->
+<!--                app:boxStrokeColor="@color/purple_700">-->
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/amount"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:inputType="number"-->
+<!--                    android:textSize="14dp"/>-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the amount spent"
+                android:textColorHint="@color/darkgrey"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lightgrey_outline"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:inputType="number"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:hint="Enter the purpose"
+                android:textColorHint="@color/darkgrey"
+                android:background="@drawable/lightgrey_outline"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:inputType="text"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:text="Enter tag (if required)"
+                android:paddingTop="10dp"
+                android:paddingHorizontal="5dp"
+                android:inputType="text"
+                android:textColor="@color/p1_pinkblue"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:gravity="center">
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:layout_margin="2dp"
+                android:padding="8dp"
+                app:chipIcon="@drawable/ic_baseline_fastfood_24"
+                style="@style/style.Chip.Choice"
+                android:textSize="16dp"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travel"
+                android:layout_margin="2dp"
+                android:padding="8dp"
+                app:chipIcon="@drawable/ic_baseline_train_24"
+                style="@style/style.Chip.Choice"
+                android:textSize="16dp"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:layout_margin="2dp"
+                android:padding="8dp"
+                app:chipIcon="@drawable/ic_baseline_home_24"
+                style="@style/style.Chip.Choice"
+                android:textSize="16dp"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:layout_margin="2dp"
+                android:padding="8dp"
+                app:chipIcon="@drawable/ic_baseline_miscellaneous_services_24"
+                style="@style/style.Chip.Choice"
+                android:textSize="16dp"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/button_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ADD EXPENDITURE"
+                android:background="@drawable/hollow_rect"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/p1_blue"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:text="Details of Already Added Expenditure"
+        android:textColor="@color/p1_blue"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

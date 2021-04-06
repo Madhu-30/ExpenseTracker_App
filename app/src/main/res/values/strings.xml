@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name"> Expense Tracker App </string>
+    <string name="app_description">Add expenditure of each day \n Add tags and domain \n Track your Expenses</string>
+
+    <string name="button"> Add Expenditure on This Date </string>
+    <string name="option1"> Add expense </string>
+    <string name="option2">View expense</string>
+    <string name="option3"> Analyze expense </string>
+    <string name="option4">Organize expense</string>
+
+
+
+    <string name="food"> Food </string>
+    <string name="travel"> Travel </string>
+    <string name="home"> Home </string>
+    <string name="others"> Others </string>
+
+
+    <string name="title_expensedetails">Details of Expenses</string>
+    <string name="title_expensedomains">View Expenses in Domains</string>
+    <string name="title_addexpense">Add Details</string>
+
+    <string name="title_piechart">Pie Chart</string>
+
+</resources>
