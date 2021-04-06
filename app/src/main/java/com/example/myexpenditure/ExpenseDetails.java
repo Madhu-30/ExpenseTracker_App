@@ -36,7 +36,6 @@ public class ExpenseDetails extends AppCompatActivity {
         mainDataList = RoomDB.getInstance(this).mainDao().getAll();
 
         if(tag != null) {
-            Toast.makeText(getApplicationContext(),"hii "+tag,Toast.LENGTH_SHORT).show();
             for (int i = 0; i < mainDataList.size(); i++) {
                 if (mainDataList.get(i).getTag().matches(tag)) {
                     displaylist.add(mainDataList.get(i));
