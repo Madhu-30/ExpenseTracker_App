@@ -1,6 +1,7 @@
 package com.example.myexpenditure;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +13,8 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class Choice extends AppCompatActivity {
 
-    LinearLayout seeExpense, seeCalendar, seeGraph, organiseExpense;
+    CardView seeExpense, seeCalendar, seeGraph, organiseExpense;
+    CardView share;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,9 @@ public class Choice extends AppCompatActivity {
         seeExpense = findViewById(R.id.seeexpenses);
         seeGraph = findViewById(R.id.seegraph);
         organiseExpense = findViewById(R.id.organise);
+
+        share = findViewById(R.id.share);
+
 
         seeCalendar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,5 +57,19 @@ public class Choice extends AppCompatActivity {
             }
         });
 
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "This is my expense Tracker App. Here is the github link. \n"+"https://github.com/Madhu-30/ExpenseTracker_App";
+
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, url);
+                sendIntent.setType("text/plain");
+
+                Intent shareIntent = Intent.createChooser(sendIntent, null);
+                startActivity(shareIntent);
+            }
+        });
     }
 }

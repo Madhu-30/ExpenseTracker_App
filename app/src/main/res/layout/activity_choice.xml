@@ -42,7 +42,7 @@
             android:textStyle="bold"/>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/notification"
+            android:id="@+id/share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:elevation="10dp"
@@ -85,13 +85,13 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/seecalendar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:cardCornerRadius="20dp"
             android:layout_margin="15dp">
             <LinearLayout
-                android:id="@+id/seecalendar"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -132,13 +132,13 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/seeexpenses"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:cardCornerRadius="20dp"
             android:layout_margin="15dp">
         <LinearLayout
-            android:id="@+id/seeexpenses"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_gravity="center_vertical"
@@ -185,13 +185,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <androidx.cardview.widget.CardView
+        android:id="@+id/seegraph"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         app:cardCornerRadius="20dp"
         android:layout_margin="15dp">
         <LinearLayout
-            android:id="@+id/seegraph"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
